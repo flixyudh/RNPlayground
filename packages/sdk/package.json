@@ -1,0 +1,24 @@
+{
+  "name": "super-app-showcase-sdk",
+  "version": "0.0.2",
+  "description": "Dependency management & utils for the Super App Showcase",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start --port 9003",
+    "test": "jest --passWithNoTests",
+    "bundle:ios": "react-native bundle --platform ios --entry-file index.js --dev false",
+    "bundle:android": "react-native bundle --platform android --entry-file index.js --dev false"
+  },
+  "files": [
+    "android",
+    "ios",
+    "lib",
+    "index.js",
+    "preset.js"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

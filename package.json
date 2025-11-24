@@ -1,0 +1,23 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "azko:ios": "yarn workspace azko ios",
+    "azko:android": "yarn workspace azko android",
+    "azko:start": "yarn workspace azko start",
+    "serve": "node scripts/serve-remote-bundler.js",
+    "start": "node scripts/start.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.11.0"
+}
